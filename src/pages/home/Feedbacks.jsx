@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
+import { styles } from "../../styles";
+import { SectionWrapper } from "../../hoc";
+import { fadeIn, textVariant } from "../../utils/motion";
+import { testimonials } from "../../constants";
 
 const FeedbackCard = ({
   index,
@@ -21,7 +21,6 @@ const FeedbackCard = ({
     <p className="text-white font-black text-[48px] xs:text-[36px] sm:text-[40px]">
       "
     </p>
-
     <div className="mt-1">
       <p className="text-white tracking-wider text-[18px] xs:text-[14px] sm:text-[16px]">
         {testimonial}
