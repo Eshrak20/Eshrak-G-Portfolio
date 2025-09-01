@@ -5,6 +5,8 @@ const DetailsBlog = ({ dummyBlogs }) => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
+
+  
   const backToHomeBlog = () => {
     navigate("/"); // navigate to home
     setTimeout(() => {
@@ -98,7 +100,7 @@ const DetailsBlog = ({ dummyBlogs }) => {
 
           {/* Summary */}
           <div className="dummyBlogs-summary my-12 p-6 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl border border-purple-100">
-            <h2 className="text-2xl font-bold mb-4 text-success">Summary</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-700 dark:text-gray-900  ">Summary</h2>
             <p className="text-gray-700 dark:text-gray-900">
               {blog.summary || "No summary available."}
             </p>
@@ -127,7 +129,7 @@ const DetailsBlog = ({ dummyBlogs }) => {
               onClick={backToHomeBlog}
               className="inline-flex items-center text-success font-medium p-4 glowing-button hover:text-white rounded-md transition-all duration-300"
             >
-              Back to Blogs
+              Back to Home
             </button>
           </div>
         </div>

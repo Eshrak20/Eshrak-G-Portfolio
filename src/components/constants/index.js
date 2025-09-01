@@ -5,22 +5,13 @@ import {
   jivta,
   vintage,
   softr,
-  javascript,
-  reactjs,
-  bootstrap,
-  restApi,
-  mysql,
-  php,
   tailwind,
-  c_v2,
   web1,
   backend1,
   ml_dl,
   android,
   fbic,
-  farmapp,
-  postgresql,
-  laravel,
+  digitalWallet,
   Electron_bd,
   Shopnoneer,
   Syntaxx,
@@ -30,6 +21,15 @@ import {
   NewHorizon,
   buet,
   avatar,
+  nodejs,
+  reactjs,
+  redux,
+  postgresql,
+  javascript,
+  typescript,
+  expressjs,
+  graphql,
+  prisma,
 } from "../../assets";
 
 export const navLinks = [
@@ -61,11 +61,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web1,
   },
   {
-    title: "Android Developer",
+    title: "Frontend Developer",
     icon: android,
   },
   {
@@ -73,43 +73,47 @@ const services = [
     icon: backend1,
   },
   {
-    title: "ML/DL Learner",
+    title: "MERN Stack Specialist",
     icon: ml_dl,
   },
 ];
 
 const technologies = [
   {
-    name: "PHP",
-    icon: php,
+    name: "Node.js",
+    icon: nodejs,
   },
   {
-    name: "laravel",
-    icon: laravel,
+    name: "Express.js",
+    icon: expressjs,
   },
   {
-    name: "Mysql",
-    icon: mysql,
+    name: "React.js",
+    icon: reactjs,
   },
   {
-    name: "RestApi",
-    icon: restApi,
+    name: "Redux",
+    icon: redux,
   },
   {
-    name: "postgresql",
+    name: "PostgreSQL",
     icon: postgresql,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Prisma",
+    icon: prisma,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "Bootstrap",
-    icon: bootstrap,
+    name: "TypeScript",
+    icon: typescript,
   },
   {
     name: "Tailwind CSS",
@@ -118,161 +122,76 @@ const technologies = [
 ];
 
 const experiences = [
+  // {
+  //   title: "Part Full Stack Developer (Laravel & React JS Specialist)",
+  //   company_name: "Innovation Lab 360",
+  //   icon: fbic, // replace with actual icon variable
+  //   iconBg: "#E6DEDD",
+  //   date: "Nov 2024 - Present",
+  //   points: [
+  //     "Developing full-stack applications using Laravel and React.js",
+  //     "Working on real-world projects for Bangladeshi government, MNCs, and private companies",
+  //     "Collaborating with cross-functional teams to deliver software solutions",
+  //   ],
+  // },
   {
-    title:
-      "Assistant Coordinator - Web Service and Front-end Software Development",
-    company_name: "Transparency International Bangladesh",
-    icon: tib, // Replace with the actual icon variable
+    title: "Learning Dynamic Web Application Developer (React & Node)",
+    company_name: "Programming Hero",
+    icon: fbic, // replace with actual icon variable
     iconBg: "#E6DEDD",
-    date: "September 2022 - February 2025",
+    date: "Mar 2025 - Present",
     points: [
-      "Web App Development, Mobile App development, Data Analysis",
-      "Coordinate third party software teams to develop software",
-      "Provide technical training to internal staff",
+      "Strengthening full-stack skills through practical, hands-on projects",
+      "Working with TypeScript, Express, MongoDB, Mongoose, SQL, PostgreSQL, Prisma",
+      "Building industry-standard applications and gaining job-ready experience",
     ],
-  },
-  {
-    title: "Assistant Programmer",
-    company_name: "JiViTA Bangladesh (Johns Hopkins University)",
-    icon: jivta, // Replace with the actual icon variable
-    iconBg: "#E6DEDD",
-    date: "February 2020 - September 2022",
-    points: [
-      "App and Web-based data collection",
-      "Error Resolution & Data cleaning on entered data",
-      "Live data visualization using REST API",
-      "Data analysis",
-      "Database Backup & Restore",
-    ],
-  },
-  {
-    title: "Programmer",
-    company_name: "Mysoft Ltd",
-    icon: mysoft, // Replace with the actual icon variable
-    iconBg: "#E6DEDD",
-    date: "December 2017 - April 2020",
-    points: [
-      "Worked as a Java Programmer",
-      "Worked in AngularJS and Bootstrap",
-      "Developed Hospital Based Applications",
-    ],
-  },
-  {
-    title: "Software Engineer",
-    company_name: "SoftRithm IT Ltd",
-    icon: softr, // Replace with the actual icon variable
-    iconBg: "#E6DEDD",
-    date: "May 2019 - January 2020",
-    points: [],
-  },
-  {
-    title: "Jr. Software Engineer",
-    company_name: "Apsis Solutions Ltd",
-    icon: apsis, // Replace with the actual icon variable
-    iconBg: "#E6DEDD",
-    date: "November 2016 - May 2017",
-    points: ["Software Development"],
-  },
-  {
-    title: "Jr. Web Developer",
-    company_name: "Vintage IT Ltd",
-    icon: vintage, // Replace with the actual icon variable
-    iconBg: "#E6DEDD",
-    date: "April 2015 - December 2015",
-    points: ["Software Development"],
   },
 ];
 
 const educations = [
   {
-    title: "Machine Learning with Python",
-    company_name: "Bangladesh University of Engineering and Technology (BUET)",
-    icon: buet,
+    title: "Computer Science (6th Semester)",
+    company_name: "Daffodil Polytechnic Institute",
+    icon: fbic, // replace with actual icon variable
     iconBg: "#03162e",
-    date: "January 07, 2023",
+    date: "Jan 2023 - Jan 2027",
     points: [
-      "Gained hands-on experience with popular ML libraries like Scikit-learn and TensorFlow.",
-      "Worked on supervised and unsupervised learning models.",
-      "Applied Python programming to solve real-world machine learning problems.",
-      "Completed a capstone project predicting outcomes using regression models.",
+      "Member & Programming Leader at DPI Computer and Programming Club",
+      "Mentoring students, organizing coding sessions, and leading collaborative projects",
+      "Building real-world problem-solving skills through hands-on learning and team innovation",
     ],
   },
   {
-    title: "Amazon Web Services",
-    company_name: "New Horizons",
-    icon: NewHorizon,
+    title: "Next Level Web Development (Batch-5)",
+    company_name: "Programming Hero",
+    icon: fbic, // replace with actual icon variable
     iconBg: "#03162e",
-    date: "September 10, 2022",
+    date: "Mar 2025 - Present",
     points: [
-      "Learned core AWS services including EC2, S3, RDS, and Lambda.",
-      "Gained understanding of cloud architecture and security best practices.",
-      "Deployed and managed cloud infrastructure using AWS Management Console.",
-      "Prepared for AWS Certified Solutions Architect – Associate level.",
+      "Hands-on learning with TypeScript, Express, MongoDB, SQL, PostgreSQL, Prisma",
+      "Building industry-standard applications to strengthen full-stack development skills",
     ],
   },
   {
-    title: "Machine Learning and Data Science",
-    company_name: "United International University (UIU)",
-    icon: uiu,
+    title: "Student",
+    company_name: "Phitron",
+    icon: fbic, // replace with actual icon variable
     iconBg: "#03162e",
-    date: "Jan 2024",
+    date: "Sep 2023 - Mar 2024",
     points: [
-      "Specialized in advanced computing, AI, and distributed systems.",
-      "Published thesis on intelligent systems using neural networks.",
-      "Collaborated on research in the field of machine learning and IoT.",
-      "Maintained CGPA above 3.75 and actively participated in academic seminars.",
+      "Learned fundamental data structures, algorithms, and programming",
+      "Focused on problem-solving and simulation exercises using C and C++",
     ],
   },
   {
-    title: "M.Sc. in Computer Science and Engineering",
-    company_name: "Jagannath University",
-    icon: jagnnat,
+    title: "S.S.C, Science",
+    company_name: "Birshreshtha Munshi Abdur Rouf Public College",
+    icon: fbic, // replace with actual icon variable
     iconBg: "#03162e",
-    date: "Feb 2020 - December 2022",
+    date: "Jan 2020 - Nov 2022",
     points: [
-      "Specialized in advanced computing, AI, and distributed systems.",
-      "Published thesis on intelligent systems using neural networks.",
-      "Collaborated on research in the field of machine learning and IoT.",
-      "Maintained CGPA above 3.75 and actively participated in academic seminars.",
-    ],
-  },
-  {
-    title: "B.Sc. in Computer Science and Engineering",
-    company_name: "Jagannath University",
-    icon: jagnnat,
-    iconBg: "#03162e",
-    date: "Feb 2011 - December 2015",
-    points: [
-      "Built a strong foundation in algorithms, data structures, and databases.",
-      "Developed several academic projects including a campus ERP system.",
-      "Participated in intra-university programming contests and workshops.",
-      "Completed industrial training on software development practices.",
-    ],
-  },
-  {
-    title: "Higher Secondary Certificate ( --HSC-- )",
-    company_name: "Firoza Bashar Ideal School & College",
-    icon: fbic,
-    iconBg: "#03162e",
-    date: "May 2008 - Jan 2010",
-    points: [
-      "Achieved excellent results in Science with a focus on Mathematics and Physics.",
-      "Active member of science club and organized inter-college tech exhibitions.",
-      "Participated in Math Olympiads and ICT competitions.",
-      "Completed basic programming in C and started exploring software concepts.",
-    ],
-  },
-  {
-    title: "Secondary School Certificate ( --SSC-- )",
-    company_name: "Mohammdpur Govt Boys",
-    icon: mohammdpurGovt,
-    iconBg: "#03162e",
-    date: "Jan 2006 - Feb 2008",
-    points: [
-      "Graduated with distinction in Science stream.",
-      "Participated in various school-level quizzes and science fairs.",
-      "Developed strong analytical and problem-solving skills early on.",
-      "Introduced to basic computing and programming logic.",
+      "Graduated with GPA 4.89",
+      "Focused on leadership and management skills",
     ],
   },
 ];
@@ -280,7 +199,7 @@ const educations = [
 const testimonials = [
   {
     testimonial:
-      "Great developer to work with. Mahbub is an excellent developer with great communication skills and impressive working experience. He consistently delivered quality work on time.",
+      "Great developer to work with. Eshrakis an excellent developer with great communication skills and impressive working experience. He consistently delivered quality work on time.",
     name: "Luis",
     designation: "Project Manager",
     company: "Freelance Client",
@@ -288,7 +207,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "Mahbub is an experienced API developer. I am really happy to work with him. He has done the job right and on time, exceeding my expectations with his backend skills.",
+      "Eshrakis an experienced API developer. I am really happy to work with him. He has done the job right and on time, exceeding my expectations with his backend skills.",
     name: "Luis",
     designation: "Technical Lead",
     company: "Colombia Startup",
@@ -314,24 +233,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Nimtola Future Town Housing",
+    name: "Digital Wallet",
     description:
-      "Nimtola Future Town Housing is a real estate company offering ready-to-build plots and modern apartments. Their official website showcases property listings with images, maps, pricing, and booking options. It’s fully responsive, easy to navigate, and includes a CMS for quick content updates.",
+      "Digital Wallet Management is designed to make money transactions easier, safer, and faster. From secure savings to instant transfers, our service is built to empower both users and agents with seamless financial solutions.For every 1000 Taka or above cash-out, a service fee of 20 Taka applies. This fee is divided equally between the Agent and the Admin.",
     tags: [
       {
-        name: "php",
+        name: "expressjs",
         color: "blue-text-gradient",
       },
       {
-        name: "laravel",
+        name: "react",
         color: "green-text-gradient",
       },
       {
-        name: "mysql",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
-    image: c_v2,
+    image: digitalWallet,
+    source_code_link: "https://github.com/Eshrak20/Digital-Wallet-React-Redux",
+    live_preview_link: "https://digital-wallet-react-redux.netlify.app/",
   },
   {
     name: "Electron Engineering and Power Services",
@@ -386,54 +307,6 @@ const projects = [
     image: Syntaxx,
     source_code_link: "https://github.com/Eshrak20/SyntaxSoftProject",
     live_preview_link: "https://syntaxss.com",
-  },
-  {
-    name: "Time Tracker",
-    description:
-      "Time Tracker is a mobile app designed for ice-breaking service providers to monitor employee work hours and material usage in real time. Employees can check in/out at job sites and log materials like salt and melters. An admin dashboard offers performance reports, job logs, and automated invoicing based on time and resources used.",
-    tags: [
-      {
-        name: "laravel",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: farmapp,
-  },
-  {
-    name: "Firm App",
-    description:
-      "Firm is a machine learning–powered mobile app that helps detect and monitor agricultural pests using smart imaging and IoT technology. Field devices capture images of bug traps, which are analyzed in real time to identify pests. The app delivers detailed reports, trends, and recommendations, enabling farmers to take timely action and protect crop yields.",
-    tags: [
-      {
-        name: "laravel",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: farmapp,
-  },
-  {
-    name: "Bizzy Deals App",
-    description:
-      "Bizzy Deals is a fun, gamified mobile app that lets users discover and claim limited-time restaurant deals. Users earn points and climb a leaderboard based on their activity, adding a competitive edge. An admin panel allows easy deal management and user tracking.",
-    tags: [
-      {
-        name: "laravel",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: farmapp,
-  },
-  {
-    name: "Time Tracker",
-    description:
-      "Time Tracker is a mobile app designed for ice-breaking service providers to monitor employee work hours and material usage in real time. Employees can check in/out at job sites and log materials like salt and melters. An admin dashboard offers performance reports, job logs, and automated invoicing based on time and resources used.",
-    tags: [
-      {
-        name: "laravel",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: farmapp,
   },
 ];
 

@@ -5,6 +5,7 @@ import ReFormatDate from "../../components/myComponents/ReFormatDate";
 
 const HomeBlog = ({ blog }) => {
   const blogs = blog?.data || [];
+  console.log(blogs)
   return (
     <section id="blog" className="pb-16 pt-52 relative overflow-hidden">
       {/* Background gradient */}
@@ -38,13 +39,16 @@ const HomeBlog = ({ blog }) => {
               viewport={{ once: true }}
               className="blog-card-container group"
             >
-              <div className="blog-card">
+              <div
+                className="blog-card rounded-lg shadow-lg" // Tailwind or custom classes
+                style={{ background: "#111827" }} // Inline style
+              >
                 <div className="relative h-60 overflow-hidden rounded-t-lg">
                   {item.image && (
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="dummyBlogs-header-img w-full h-96 object-cover"
+                      className="dummyBlogs-header-img w-full  object-fill"
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>

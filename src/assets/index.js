@@ -17,22 +17,17 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import restApi from "./tech/restApi.png"
-import bootstrap from "./tech/Bootstrap.png"
+import restApi from "./tech/restApi.png";
+import bootstrap from "./tech/Bootstrap.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import laravel from "./tech/laravel.png";
-import django from "./tech/django.png";
-import php from "./tech/php_logo.png";
-import flutter from "./tech/flutter.png";
-import mysql from "./tech/mysql.png";
+
+import expressjs from "./tech/expressjs.png";
+import graphql from "./tech/graphql.png";
+import prisma from "./tech/prisma.png";
 import postgresql from "./tech/postgresql.png";
-import java from "./tech/java.png";
-import python from "./tech/python.png";
-// import cloudinary from "./tech/Cloudinary.png";
-import firebase from "./tech/firebase.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -48,7 +43,7 @@ import Electron_bd from "./Projects/Electron-bd.png";
 import Shopnoneer from "./Projects/Shopnoneer.png";
 import Syntaxx from "./Projects/Syntaxx.png";
 import cintracon_2 from "./ss_home.jpg";
-import c_v2 from "./c_v2.jpg";
+import digitalWallet from "./Projects/digitalWallet.png";
 import c_v1 from "./c_v1.jpg";
 import pms from "./pms.jpg";
 import spnr from "./spnr.jpg";
@@ -83,8 +78,6 @@ import jivta from "./company/jivta.png";
 import vintage from "./company/vintage.png";
 import softr from "./company/softr.jpg";
 import avatar from "./Testimonial/avatar.jpg";
-
-
 
 export {
   avatar,
@@ -128,11 +121,15 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  graphql,
   restApi,
   bootstrap,
   redux,
   tailwind,
   typescript,
+  expressjs,
+  postgresql,
+  prisma,
   threejs,
   meta,
   shopify,
@@ -143,7 +140,7 @@ export {
   tripguide,
   bangla_ai,
   cintracon_2,
-  c_v2,
+  digitalWallet,
   c_v1,
   pms,
   spnr,
@@ -152,18 +149,8 @@ export {
   backend1,
   ml_dl,
   android,
-  django,
-  python,
-  mysql,
-  postgresql,
-  php,
-  // cloudinary,
-  java,
-  firebase,
-  laravel,
-  flutter,
   nawmi,
   shafayat,
   asif,
-  faiyaz
+  faiyaz,
 };

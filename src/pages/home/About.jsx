@@ -5,7 +5,7 @@ import { styles } from "../../styles";
 import { services } from "../../components/constants";
 import { SectionWrapper } from "../../components/hoc";
 import { fadeIn, textVariant } from "../../utils/motion";
-import profileImage from "../../assets/Profile/shohag.png";
+import profileImage from "../../assets/Profile/Eshrak.png";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -49,38 +49,38 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I am a dedicated Software Engineer with years of experience working
-          across various software companies, taking on dynamic roles such as Web
-          Developer, Testing Engineer, and Front-End Designer. My passion lies
-          in building scalable, secure, and high-performance applications that
-          solve real-world problems.
+          Hi, I’m Eshrak  — a passionate Full-Stack JavaScript Developer
+          specializing in the MERN stack. I focus on building scalable,
+          high-performance web applications with a strong backend foundation
+          using Node.js, Express.js, and PostgreSQL.
           <br />
           <br />
-          My technical expertise spans across multiple domains. I specialize in
-          Object-Oriented Design and Analysis, and I'm highly proficient in
-          back-end development using technologies like Java (Spring Boot),
-          Groovy on Grails, Node.js, PHP, CodeIgniter, ASP.NET Web Forms, ASP
-          Classic, and ASP.NET MVC. Whether it's designing RESTful APIs or
-          optimizing back-end logic, I ensure reliable and maintainable
-          solutions.
+          My expertise lies in designing RESTful APIs, integrating databases,
+          and implementing secure authentication systems. I ensure that every
+          application I build is robust, maintainable, and optimized for
+          real-world use cases.
           <br />
           <br />
-          I have solid experience working with relational and non-relational
-          databases including Oracle, MySQL, MS SQL Server, and MongoDB. On the
-          client side, I create intuitive and responsive interfaces using
-          AngularJS, Angular, JavaScript, jQuery, HTML, CSS, and Tailwind —
-          combining clean design with usability.
+          On the frontend, I create responsive and intuitive interfaces with
+          React, Redux, and Tailwind CSS, seamlessly connecting the user
+          experience to a powerful backend.
           <br />
-          <br />I believe in continuous learning and adapting to new challenges.
-          My goal is to craft high-quality software that not only meets
-          technical requirements but also enhances user experience and drives
-          business growth.
+          <br />
+          I’m actively enhancing my skills through advanced courses like
+          Programming Hero’s Level 2 (Next Level Web Development), working
+          hands-on with TypeScript, Prisma, GraphQL, MongoDB, and modern backend
+          tools. I don’t just learn — I implement and ship real projects.
+          <br />
+          <br />
+          If you’re looking for someone to transform ideas into production-ready
+          web applications with a focus on backend excellence and full-stack
+          performance, I’m ready to collaborate.
         </motion.p>
 
         {/* Image Section */}
         <motion.div
           variants={fadeIn("left", "spring", 0.5, 1)}
-          className="w-full  flex justify-center"
+          className="w-full flex justify-center"
         >
           <img
             src={profileImage}

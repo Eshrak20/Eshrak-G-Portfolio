@@ -51,4 +51,4 @@ npm run dev
 
 ### Optional : 
 - **npm run dev -- --host** —   For run the project in your network through wifi 
-# Eshrak-G-Portfolio
+# Eshrak -G-Portfolio

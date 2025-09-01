@@ -1,160 +1,102 @@
-// src/dummyJson/dummyBlogs.js
+import CPU from "../assets/blogImages/6AXJ0p2yrgaap8ocaH86RdAyyhyNgf297cuOdiQJ.png";
+import nodeJsCheating from "../assets/blogImages/nodeJsCheating.jpg";
+import lp from "../assets/blogImages/lp.jpg";
+import typescriptImg from "../assets/blogImages/typecript.jpg";
+import documnetion from "../assets/blogImages/documnetion.jpg";
+import database from "../assets/blogImages/database.png";
+import profileImage from "../assets/Profile/Eshrak.png";
 
 const dummyBlogs = {
   data: [
     {
       id: 1,
-      title: "Getting Started with React",
-      slug: "getting-started-with-react",
-      image: "https://picsum.photos/seed/react/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
+      title: "CPU vs GPU Architecture: Sequential Logic vs Parallel Execution",
+      slug: "cpu-vs-gpu-explained-through-kitchen-story",
+      image: CPU,
+      profile_photo: profileImage,
       date: "2025-08-15",
       category: "technical",
+      published_by: "Eshrak ",
       type: "frontend",
+      description:
+        "একটি গ্রামে ছিল দুইটি বিশাল রান্নাঘর (kitchen)। একটি রান্নাঘরকে বলা হত CPU আর অন্যটি GPU। এই দুই রান্নাঘর ছিল একেবারে ভিন্নধর্মী—তাদের কাজ করার পদ্ধতি, জনবল, এবং কাজের efficiency ছিল আলাদা। প্রথম রান্নাঘরটি ছিল CPU (Central Processing Unit)। এটি ছিল খুব classy ধরনের রান্নাঘর। এখানে কাজ করতেন মাত্র চারজন expert chef, যারা প্রত্যেকেই জটিল রেসিপি খুবই দক্ষতার সাথে তৈরি করতে পারতেন। তবে তাদের কাজের একটা নিয়ম ছিল—একসাথে বেশি কাজ করলে মনোযোগ হারিয়ে যায়, তাই তারা একসাথে দুই-তিনটি ডিশের বেশি কখনোই তৈরি করতেন না। তারা যেটুকু করতেন, সেটা খুবই নিখুঁতভাবে করতেন—যেমন কেক তৈরি করা, মশলা নিখুঁতভাবে মেশানো, অথবা সঠিক সময় ধরে রান্না সম্পন্ন করা। এই রান্নাঘরটির মূল বৈশিষ্ট্য ছিল efficiency ও precision। ঠিক যেমনভাবে একটি CPU কম core বা worker নিয়ে জটিল এবং ধারাবাহিক (sequential) task খুব effectively handle করে। দ্বিতীয় রান্নাঘরটি ছিল GPU (Graphics Processing Unit)। এই রান্নাঘরটি ছিল অনেক বড় এবং এখানে কাজ করতেন শত শত শেফ। তবে তারা individually খুব একটা জটিল রান্না জানতেন না। বরং তারা সবাই একই ধরনের কাজ বারবার করতেন। যেমন, ১০০ জন শেফ একসাথে ১০০টি ডিম ভাজতেন বা ২০০ জন শেফ একসাথে soup গরম করতেন। এই রান্নাঘরটি মূলত parallel processing-এর জন্য পারফেক্ট ছিল—যেখানে অনেক কাজ একসাথে করা যায়, কিন্তু কাজগুলো সাধারণ ও একই ধরনের হতে হয়। এটা একদম GPU-এর মতো—যেখানে শত শত core একসাথে parallel-e কাজ করতে পারে এবং দ্রুত কাজ শেষ করতে পারে। বাস্তবে এই analogy-এর মানে দাঁড়ায়: CPU-তে সাধারণত ৪ থেকে ১৬টি core থাকে। এই core গুলো জটিল ও সিরিয়াল প্রসেসিং-এর জন্য তৈরি। একে ব্যবহার করা হয় software execution, code run, এবং operating system চালানোর মতো critical task-এ। GPU, অন্যদিকে, অনেক বেশি core বা worker নিয়ে তৈরি হয়—শত শত core একসাথে কাজ করতে পারে। GPU ব্যবহার করা হয় graphics rendering, AI model training, gaming, এবং high-speed computation এর জন্য।",
+
       summary:
-        "Learn the basics of React, including components, props, and state management. A perfect guide for beginners.",
+        "CPU হলো একজন দক্ষ শেফের মতো, যে অল্প কাজ একসাথে করলেও নিখুঁতভাবে করে, যেখানে GPU অনেক শেফ নিয়ে একসাথে একই ধরনের সহজ কাজ দ্রুত করে ফেলে। বাস্তবে, CPU ধারাবাহিক ও জটিল প্রসেসের জন্য আর GPU একসাথে অনেক সাধারণ কাজের জন্য ব্যবহৃত হয়।",
     },
     {
       id: 2,
-      title: "Understanding JavaScript Closures",
-      slug: "understanding-javascript-closures",
-      image: "https://picsum.photos/seed/js/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
+      title: "নোড.জেএস এর পেছনের চিটিং সিস্টেম",
+      slug: "nodejs-behind-the-scenes-thread-cheating",
+      image: nodeJsCheating,
+      profile_photo: profileImage,
+      published_by: "Eshrak ",
       date: "2025-07-30",
       category: "technical",
       type: "backend",
+      description:
+        "অনেকেই ভাবে, নোড.জেএস একদম সিঙ্গেল থ্রেড, মানে একসাথে একটুকরো কোডই চলে। কিন্তু এর পেছনে বেশ চমকপ্রদ একটা সিস্টেম কাজ করে। তুমি যখন fs.readFile() বা bcrypt.hash() এর মতো কোনো ব্লকিং অপারেশন দাও, তখন মনে হয় এগুলো সবকিছু জাভাস্ক্রিপ্টের মেইন থ্রেডেই হচ্ছে। কিন্তু নোড.জেএস আসলে চুপিচুপি বলে, “তুমি একটু দাঁড়াও, আমি ব্যাকডোর দিয়ে কাজটা সেরে আসি।” এই ব্যাকডোরের নাম হলো libuv। এটা হলো C++ এ লেখা এক লাইব্রেরি, যা সোজা অপারেটিং সিস্টেমের কাছে গিয়ে বলে, “ভাই, এই ফাইল পড়া, DNS দেখা, ক্রিপ্টো করা – এগুলো তুই করে দে, আমি বসকে দেখাই আমি কত্তো স্মার্ট!” ফলে অপারেটিং সিস্টেম (যেমন Windows, Linux) নিজের থ্রেড চালায় আর কাজগুলো পেছনে পেছনে সম্পন্ন করে ফেলে। আর যখন কাজ শেষ হয়, তখন নোড.জেএস মেইন থ্রেডে কলব্যাক দিয়ে বলে, “দেখো কেমন ফাস্ট আমি!” এভাবে দেখতে গেলে, জাভাস্ক্রিপ্ট কোড আসলে এক থ্রেডেই চলছে, কিন্তু পেছনে libuv এর থ্রেড-পুল আর অপারেটিং সিস্টেমের লেভেলে অনেকগুলো থ্রেড একসাথে কাজ করছে। নোড.জেএস সিঙ্গেল থ্রেডেড, কিন্তু চিট করে মাল্টিথ্রেডেডের সুবিধা নিচ্ছে। মোট কথা, নোড.জেএস এক সিঙ্গেল থ্রেডেড চিট মাস্টার, যা ব্যাকডোর (libuv) দিয়ে অপারেটিং সিস্টেমকে কাজে লাগিয়ে মেইন থ্রেডে হিরো সাজে। তাহলে কি, নোড.জেএস আসলে মাল্টিথ্রেডেড? না, জাভাস্ক্রিপ্ট কোডের দিক থেকে তুমি একদম সিঙ্গেল থ্রেডেই আছো। কিন্তু এর পেছনে চমকপ্রদভাবে অপারেটিং সিস্টেমের শক্তি ব্যবহার হচ্ছে!",
       summary:
-        "Closures are one of the most powerful concepts in JavaScript. This article explains how they work and why they’re useful.",
+        "তাহলে কি, নোড.জেএস আসলে মাল্টিথ্রেডেড? নোড.জেএস একদিকে সিঙ্গেল থ্রেডেড হলেও, পেছনে libuv আর অপারেটিং সিস্টেমের মাধ্যমে থ্রেড পুলের সুবিধা নিয়ে মাল্টিথ্রেডিং এর মতো কাজ করছে। মোট কথা, নোড.জেএস এক সিঙ্গেল থ্রেডেড চিট মাস্টার, যা ব্যাকডোর (libuv) দিয়ে অপারেটিং সিস্টেমকে কাজে লাগিয়ে মেইন থ্রেডে হিরো সাজে।",
     },
     {
       id: 3,
-      title: "CSS Grid vs Flexbox: When to Use What?",
-      slug: "css-grid-vs-flexbox",
-      image: "https://picsum.photos/seed/css/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
+      title: "কোড কপি-পেস্ট করার জন্য হলেও কোড ভালো করে শেখা লাগবে।",
+      slug: "code-sikha-ai-communication-dsa",
+      image: lp,
+      published_by: "Eshrak ",
+      profile_photo: profileImage,
       date: "2025-07-10",
       category: "technical",
       type: "frontend",
+      description:
+        "AI কে প্রমোট দিতে গেলে এবং কোড কপি-পেস্ট করার জন্য হলেও কোড ভালো করে শেখা লাগবে। আরেকটা বিষয় হচ্ছে, কী জানেন — আমরা অনেকেই কোড এক্সিকিউশন বুঝি না। থিওরি জিনিস মাথায় নিতে চাই না, আমাদের মস্তিষ্কের ব্রেনটা তো এমনই — কোন নতুন জিনিস শিখতে চায় না। তাই বলে কি শেখা বন্ধ করে দিব? কোড এক্সিকিউশনে বুঝতে হবে, এবং হাতে-কলমে সিনট্যাক্সও বোঝা লাগবে। কেন এই সিনট্যাক্স লিখতেছি, সেটাও বোঝা লাগবে। তাহলেই আমরা আর্টিফিশিয়াল ইন্টেলিজেন্স-এর সাথে কমিউনিকেট করতে পারব। আরেকটা জিনিস আমি অবশ্যই বলব — আমরা অনেকেই বিভিন্ন টেকনোলজি শিখি, ওয়েব ডেভেলপমেন্ট শিখি, মোবাইল অ্যাপ শিখি — এগুলো তো শিখব, ঠিক আছে। বাট, কম্পিউটার সায়েন্সের যে মেইন জিনিস, সেটা আমি মনে করি ডাটা স্ট্রাকচার এবং এলগরিদম। এগুলো যার জানা থাকে, বাকি সব টুল ইউজ করা কোনো বিষয় না। সো, প্রতিদিন এগুলার দিকে কিছু সময় ব্যয় করা অবশ্যই দরকার বলে আমি মনে করি।",
       summary:
-        "Both CSS Grid and Flexbox are powerful layout tools. Let’s break down the differences and learn when to use each.",
+        "AI কে প্রমোট দিতে গেলে এবং কোড কপি-পেস্ট করার জন্য হলেও কোড ভালো করে শেখা লাগবে। শুধু থিওরি মুখস্থ না করে কোড এক্সিকিউশন বোঝা, হাতে-কলমে সিনট্যাক্স শিখা এবং তার পেছনের যুক্তিগুলো বুঝা — এগুলা না পারলে আমরা AI এর সাথেও ঠিকমতো কমিউনিকেট করতে পারব না। আর টুলস শিখা যেমন দরকার, তার চেয়েও গুরুত্বপূর্ণ হলো ডাটা স্ট্রাকচার ও অ্যালগরিদম — এগুলো যাদের হাতের মুঠোয়, তারা যেকোনো টেক টুলস আত্মবিশ্বাসের সাথে ব্যবহার করতে পারে।",
     },
     {
       id: 4,
-      title: "A Beginner’s Guide to TypeScript",
-      slug: "beginners-guide-to-typescript",
-      image: "https://picsum.photos/seed/ts/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
+      title: "TypeScript-এ Polymorphism: গিরগিটির মতো রূপ বদলানো",
+      slug: "typescript-polymorphism-like-chameleon",
+      image: typescriptImg,
+      profile_photo: profileImage,
+      published_by: "Eshrak ",
       date: "2025-06-20",
       category: "technical",
       type: "frontend",
+      description:
+        "TypeScript-এ Polymorphism — গিরগিটির মতো রূপ বদলানো একটা গিরগিটির কথা কল্পনা করুন। গাছে উঠলে সবুজ, মাটিতে নামলে বাদামি, আর কোনো ফুলের উপর গেলে রঙ ধরে লালচে। জায়গা বদলালেই রঙ বদলায়, কিন্তু গিরগিটি তো গিরগিটিই থাকে — তার পরিচয় কিন্তু একটাই। TypeScript-এ Polymorphism ঠিক এমনই একটা কনসেপ্ট। একটা অবজেক্ট থাকে, যেটা তার পরিবেশ বা প্রসঙ্গ অনুযায়ী আলাদা আলাদা রূপে কাজ করতে পারে। কোডে আপনি হয়তো জানেন না, ভেতরে কী ধরনের অবজেক্ট আছে, কিন্তু সেই অবজেক্টটা ঠিকই বুঝে নেয় কী করতে হবে — নিজের মতো করে আচরণ করে। এইরকম আচরণকেই বলে Polymorphism — একটা ইন্টারফেস বা বেস ক্লাস, কিন্তু তার অনেক রকম রূপ। এই কনসেপ্টের সবচেয়ে বড় সুবিধা হলো — একবার কোনো কাঠামো বা বেস ক্লাস বানালেই, পরবর্তীতে নতুন নতুন ক্লাসে সেটা নিজের মতো করে ব্যবহার করা যায়। এতে করে কোড হয় পরিষ্কার, নমনীয় আর সহজে পরিবর্তনযোগ্য। শেষ কথা: TypeScript-এ Polymorphism মানে হলো — অবজেক্টটা একই থাকে, কিন্তু তার ব্যবহার বদলায়। যেমন গিরগিটি — রঙ বদলায়, কিন্তু নিজেকে হারায় না।",
       summary:
-        "TypeScript makes JavaScript more robust with static typing. This guide covers the essentials to get you started.",
+        "TypeScript-এ Polymorphism মানে হলো—একটা অবজেক্ট এক থাকে, কিন্তু প্রসঙ্গভেদে নিজের আচরণ বদলায়, ঠিক গিরগিটির মতো।",
     },
     {
       id: 5,
-      title: "Node.js Performance Optimization",
-      slug: "nodejs-performance-optimization",
-      image: "https://picsum.photos/seed/node/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
+      title: "Documentation ব্যথার ওষুধ – AI’r Quick Solutions!",
+      slug: "documentation-baythar-oushud-ai-quick-solutions",
+      image: documnetion,
+      published_by: "Eshrak ",
+      profile_photo: profileImage,
       date: "2025-06-05",
       category: "technical",
       type: "backend",
+      description:
+        "আর্টিফিশিয়াল ইন্টেলিজেন্স নিজেও শিখে মানুষের কাছ থেকে। ধরুন, কোন সিনিয়রের কাছ থেকে ও একটা জিনিস শিখে, সেটা আবার সে জুনিয়রকে শেখায়। সব সময় ও সবকিছু পারে এরকম না, ওকে কিছু সময় ইনপুট দিতে হয়, জানাতে হয়। নাইলে ও শিখবে কোত্থেকে? আমার যা মনে হয়, এখন ডকুমেন্টেশনগুলোও ওকে গিলে খাওয়ানো হয়, ভালো করে বুঝানো হয়। কারণ, বিভিন্ন ওয়েবসাইটের ডকুমেন্টেশন ঘেঁটে ঘেঁটে পড়া, এটা একটা মাথা ব্যথার কারণ। সহজে কোন কিছু বের করা যায় না, হাজার লাইনের ভিতরে আমার যে জিনিসটা দরকার, সেটা ChatGPT থেকে বললে খুব সহজে দিতে পারে। তবে, মাঝে মাঝে বিস্তারিত বুঝতে এবং গভীরে যেতে ওয়েবসাইট বা অফিসিয়াল ডকুমেন্টেশন দেখা দরকার। সুতরাং, দুটো মিলিয়ে ব্যবহার করাই সবচেয়ে ভালো — যেখানে দরকার শর্টকাটে AI থেকে উত্তর নিয়ে কাজ করা, আর গভীর জানার প্রয়োজন হলে ওয়েবসাইট ঘাঁটাঘাঁটি করা।",
       summary:
-        "Improve the performance of your Node.js applications with these optimization tips and best practices.",
+        "AI নিজেও মানুষের থেকে শেখে এবং তার জ্ঞান বাড়াতে বিভিন্ন ডকুমেন্টেশন পড়ে। সহজ এবং দ্রুত উত্তর পেতে AI ব্যবহার করাই ভালো, কিন্তু গভীর তথ্যের জন্য অফিসিয়াল ডকুমেন্টেশন দেখা জরুরি",
     },
     {
       id: 6,
-      title: "Tailwind CSS Tips & Tricks",
-      slug: "tailwind-css-tips-tricks",
-      image: "https://picsum.photos/seed/tailwind/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
-      date: "2025-05-22",
+      title: "ডেটাবেসের রহস্যময় জগৎ - Structure, Functionality, and Best Strategies to Propel You Forward!",
+      slug: "databaser-rohosshomoy-jogot-structure-functionality-best-strategies",
+      image: database,
+      published_by: "Eshrak ",
+      profile_photo: profileImage,
+      date: "2025-05-27",
       category: "nontechnical",
       type: "design",
+      description:"এই ১০-১২ দিন ধরে ডেটাবেসের ভিতরে কত কিছু ঘটে, তা জানলাম। আগে কখনো এত গভীরভাবে ডেটাবেস নিয়ে পড়াশোনা করা হয়নি। তবে এখন বুঝলাম, এক সময় ছিল, যখন না ছিল ফ্রন্টএন্ড, না ছিল ব্যাকএন্ড—মানুষ সরাসরি ডেটাবেসের ভিতরে ডেটা এন্ট্রি করতো, আপডেট করতো, ডিলিট করতো। এক কথায়, সবকিছুই হতো ডেটাবেসের ভিতরেই। মূলত ডেটাবেসের ইতিহাস শুরু হয়েছিল বড় বড় কোম্পানি, সরকারি দপ্তর, গবেষণা সংস্থা, এবং ব্যবসায়িক হিসাব-নিকাশের প্রয়োজন মেটানোর জন্য। ব্যাংকিং সেক্টরও ছিল এর একটি গুরুত্বপূর্ণ ক্ষেত্র, তবে একমাত্র কারণ ছিল না। প্রথম দিকে তথ্য সংরক্ষণের জন্য ফাইল সিস্টেম ব্যবহার করা হতো, যেখানে ডেটা ম্যানুয়ালি ম্যানেজ করা হতো। এরপর প্রযুক্তির অগ্রগতির সাথে সাথে ডেটাবেস সিস্টেমের উন্নতি হতে থাকে। উদাহরণ হিসেবে, IBM তৈরি করে IMS (Information Management System), যা মূলত Apollo space mission এর জন্য ডিজাইন করা হয়েছিল। তারপর আসে রিলেশনাল ডেটাবেস (RDBMS) এর ধারণা, যেটির ভিত্তি তৈরি করেন Edgar F. Codd। তার এই বৈপ্লবিক ধারণা থেকেই জন্ম নেয় Oracle, SQL Server, PostgreSQL-এর মতো শক্তিশালী ডেটাবেস সিস্টেম। আজকের দিনে আমরা ফ্রন্টএন্ড আর ব্যাকএন্ডের জগতে কাজ করি, কিন্তু ভিতরে ডেটা কীভাবে ম্যানেজ হচ্ছে, তার স্পষ্ট ধারণা থাকলে বড় প্রজেক্টে অনেক বেশি কার্যকরভাবে কাজ করা যায়। শুধু query লিখে কাজ না করে, ভিতরে যে বিশাল অর্গানাইজেশন এবং প্রসেসিং চলে, সেটি বোঝা খুব গুরুত্বপূর্ণ। কারণ, ধারণা থাকলে ডেটাবেস থেকে কিভাবে সবচেয়ে efficient উপায়ে ডেটা বের করতে হবে, সেটি নিয়ে মাথা ঘামানোর শক্তিটা আসে। আর যদি এই ধারণাটাই না থাকে, তাহলে তো প্রকৃত সমস্যার সমাধান করা কঠিন হবে। অনেক কিছু আগে থেকেই জানা ছিল, তাই সেগুলো নিয়ে আলাদা করে আলোচনা করছি না। কিন্তু এই কয়েকদিনে কিছু নতুন এবং বেশ ইন্টারেস্টিং জিনিস শিখেছি, যদিও সবগুলো প্র্যাকটিস করার সুযোগ হয়নি। যেগুলো বিশেষভাবে আগ্রহ জাগিয়েছে, সেগুলো হলো: Scalar and Aggregate Functions in PostgreSQL .. Grouping and Filtering Data with GROUP BY and HAVING.. Subqueries.. Views in PostgreSQL.. Functions in PostgreSQL.. Procedures.. Triggers in PostgreSQL.. Indexing Techniques in PostgreSQL.. দেখা যাক সামনে কী হয়। যা শিখতে হবে, এখনই শেখা উচিত—না হলে বড় বড় প্রজেক্টে গিয়ে আটকে যাওয়ার সম্ভাবনা বেশি। আজ থেকে শুরু হচ্ছে নতুন আরেকটি মিশন: Node.js, Express.js, এবং MongoDB। এই মিশন চলবে ঈদের আগ পর্যন্ত।",
       summary:
-        "Make the most out of Tailwind CSS with these useful tips and tricks for faster development.",
-    },
-    {
-      id: 7,
-      title: "Getting Started with React",
-      slug: "getting-started-with-react",
-      image: "https://picsum.photos/seed/react/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-      date: "2025-08-15",
-      category: "technical",
-      type: "frontend",
-      summary:
-        "Learn the basics of React, including components, props, and state management. A perfect guide for beginners.",
-    },
-    {
-      id: 8,
-      title: "Understanding JavaScript Closures",
-      slug: "understanding-javascript-closures",
-      image: "https://picsum.photos/seed/js/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
-      date: "2025-07-30",
-      category: "technical",
-      type: "backend",
-      summary:
-        "Closures are one of the most powerful concepts in JavaScript. This article explains how they work and why they’re useful.",
-    },
-    {
-      id: 9,
-      title: "CSS Grid vs Flexbox: When to Use What?",
-      slug: "css-grid-vs-flexbox",
-      image: "https://picsum.photos/seed/css/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
-      date: "2025-07-10",
-      category: "technical",
-      type: "frontend",
-      summary:
-        "Both CSS Grid and Flexbox are powerful layout tools. Let’s break down the differences and learn when to use each.",
-    },
-    {
-      id: 10,
-      title: "A Beginner’s Guide to TypeScript",
-      slug: "beginners-guide-to-typescript",
-      image: "https://picsum.photos/seed/ts/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
-      date: "2025-06-20",
-      category: "technical",
-      type: "frontend",
-      summary:
-        "TypeScript makes JavaScript more robust with static typing. This guide covers the essentials to get you started.",
-    },
-    {
-      id: 11,
-      title: "Node.js Performance Optimization",
-      slug: "nodejs-performance-optimization",
-      image: "https://picsum.photos/seed/node/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
-      date: "2025-06-05",
-      category: "technical",
-      type: "backend",
-      summary:
-        "Improve the performance of your Node.js applications with these optimization tips and best practices.",
-    },
-    {
-      id: 12,
-      title: "Tailwind CSS Tips & Tricks",
-      slug: "tailwind-css-tips-tricks",
-      image: "https://picsum.photos/seed/tailwind/600/400",
-      profile_photo: "https://picsum.photos/seed/react/600/400",
-
-      date: "2025-05-22",
-      category: "nontechnical",
-      type: "design",
-      summary:
-        "Make the most out of Tailwind CSS with these useful tips and tricks for faster development.",
+        "এক সময় ছিল, যখন না ছিল ফ্রন্টএন্ড, না ছিল ব্যাকএন্ড—মানুষ সরাসরি ডেটাবেসের ভিতরে ডেটা এন্ট্রি করতো, আপডেট করতো, ডিলিট করতো। এক কথায়, সবকিছুই হতো ডেটাবেসের ভিতরেই।",
     },
   ],
   links: [
