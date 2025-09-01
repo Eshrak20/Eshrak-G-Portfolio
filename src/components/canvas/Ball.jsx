@@ -7,7 +7,7 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-import CanvasLoader from "../components/Loader";
+import CanvasLoader from "../loader/Loader";
 
 const Ball = ({ imgUrl, resetTrigger }) => {
   const ref = useRef();

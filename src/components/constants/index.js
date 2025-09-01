@@ -17,7 +17,6 @@ import {
   backend1,
   ml_dl,
   android,
-  innovation_lab,
   fbic,
   farmapp,
   postgresql,
@@ -31,7 +30,7 @@ import {
   NewHorizon,
   buet,
   avatar,
-} from "../assets";
+} from "../../assets";
 
 export const navLinks = [
   {

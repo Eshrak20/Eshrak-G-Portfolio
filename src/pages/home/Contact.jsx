@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../../styles";
-import { EarthCanvas } from "../canvas";
-import { SectionWrapper } from "../../hoc";
+import { EarthCanvas } from "../../components/canvas";
+import { SectionWrapper } from "../../components/hoc";
 import { slideIn } from "../../utils/motion";
 
 const Contact = () => {
@@ -37,7 +37,7 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Mahbub Alom Shohag",
+          to_name: "Eshràk G",
           from_email: form.email,
           reply_to: form.email,
           // to_email: "eshrakg62@gmail.com",

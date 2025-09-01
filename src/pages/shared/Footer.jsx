@@ -1,4 +1,4 @@
-import GradientIcon from "../components/GradientIcon";
+import GradientIcon from "../../components/loader/GradientIcon";
 import {
     faFacebook,
     faLinkedin,
