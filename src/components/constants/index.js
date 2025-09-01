@@ -38,8 +38,20 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "project",
+    title: "Project",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "blog",
+    title: "Blog",
   },
   {
     id: "contact",
@@ -293,7 +305,7 @@ const testimonials = [
   {
     testimonial:
       "Shohag is a reliable and highly skilled developer. From UI design with Angular to backend development in PHP and ASP.NET MVC, he handles full-stack tasks with ease and professionalism.",
-    name: "Rifat Ahmed",
+    name: "Fardin vaie",
     designation: "Senior Developer",
     company: "Freelance Projects, USA",
     image: avatar,

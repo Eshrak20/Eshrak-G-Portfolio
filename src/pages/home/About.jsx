@@ -36,8 +36,6 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
-  console.log("ww", profileImage);
-
   return (
     <>
       <motion.div variants={textVariant()}>

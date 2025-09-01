@@ -7,18 +7,20 @@ import Education from "./Education";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Tech from "./Tech";
-
+import HomeBlog from "./HomeBlog";
+import dummyBlogs from "../../dummyJson/dummyBlogs";
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <About />
-      <Tech/>
-      <Experience/>
-      <Works/>
+      <Tech />
+      <Experience />
+      <Works />
       <Education />
-      <Feedbacks/>
+      <HomeBlog  blog={dummyBlogs} />
+      <Feedbacks />
       <Contact />
     </div>
   );

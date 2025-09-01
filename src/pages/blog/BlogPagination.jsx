@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "@inertiajs/react";
+import { Link } from "react-router-dom";
 
 const BlogPagination = ({ links }) => {
     if (!links || links.length === 0) return null;
@@ -9,7 +8,7 @@ const BlogPagination = ({ links }) => {
             {links.map((link, index) => (
                 <Link
                     key={index}
-                    href={link.url ?? "#"}
+                    to={link.url ?? "#"}
                     dangerouslySetInnerHTML={{ __html: link.label }}
                     className={`
                         relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300
